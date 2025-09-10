@@ -4,7 +4,7 @@
       <div class="profile-icon">💼</div>
       <h2 class="profile-title">User Profile</h2>
     </div>
-    
+
     <div class="profile-content">
       <div class="data-section">
         <h3 class="data-title">📄 Query Parameters</h3>
@@ -12,23 +12,28 @@
           <pre class="data-code">{{ JSON.stringify(query, null, 2) }}</pre>
         </div>
       </div>
-      
+
       <div class="data-section">
         <h3 class="data-title">🔗 Dynamic Parameters</h3>
         <div class="data-display">
           <div class="param-badge">
             <span class="param-key">name:</span>
-            <span class="param-value">{{ userProfileRoute.getParams().name }}</span>
+            <span class="param-value">{{
+              userProfileRoute.getParams().name
+            }}</span>
           </div>
         </div>
       </div>
-      
+
       <div class="info-section">
         <div class="info-card">
           <div class="info-icon">✨</div>
           <div class="info-content">
             <h4>Type-Safe Profile</h4>
-            <p>This profile page demonstrates how route parameters and query strings are automatically typed and validated.</p>
+            <p>
+              This profile page demonstrates how route parameters and query
+              strings are automatically typed and validated.
+            </p>
           </div>
         </div>
       </div>
@@ -37,8 +42,8 @@
 </template>
 
 <script setup lang="ts">
-import { userProfileRoute } from '../main'
-const query = userProfileRoute.getQuery()
+import { userProfileRoute } from "../main";
+const query = userProfileRoute.getQuery();
 </script>
 
 <style scoped>
@@ -110,7 +115,7 @@ const query = userProfileRoute.getQuery()
 
 .data-code {
   color: #22d3ee;
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 0;
@@ -135,7 +140,7 @@ const query = userProfileRoute.getQuery()
 
 .param-value {
   color: #22d3ee;
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-weight: 600;
 }
 
@@ -177,7 +182,7 @@ const query = userProfileRoute.getQuery()
     flex-direction: column;
     text-align: center;
   }
-  
+
   .profile-title {
     font-size: 1.25rem;
   }

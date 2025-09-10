@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import {aboutRoute, homeRoute, userProfileRoute, userRoute,} from "../main";
+import { aboutRoute, homeRoute, userProfileRoute, userRoute } from "../main";
 
-const query = homeRoute.getQuery()
+const query = homeRoute.getQuery();
 
 function getQueryData() {
-  const query = homeRoute.getQuery()
+  const query = homeRoute.getQuery();
 }
 
 function toUserProfile() {
   userProfileRoute.push({
-    query: {id: 0, name: "bryant"},
-    params:{name: 'bob'}
+    query: { id: 0, name: "bryant" },
+    params: { name: "bob" },
   });
 }
 
 function toUser() {
-  userRoute.push({params:{ name: 'alice' }})
+  userRoute.push({ params: { name: "alice" } });
 }
 </script>
 
@@ -23,7 +23,9 @@ function toUser() {
   <div class="home">
     <div class="hero">
       <h1 class="hero-title">🎆 Welcome to Vue Typesafe Router</h1>
-      <p class="hero-subtitle">Experience type-safe navigation with compile-time guarantees</p>
+      <p class="hero-subtitle">
+        Experience type-safe navigation with compile-time guarantees
+      </p>
     </div>
 
     <div class="content">
@@ -37,14 +39,16 @@ function toUser() {
       <div class="section">
         <h2 class="section-title">🚀 Navigation Actions</h2>
         <div class="button-grid">
-          <button 
+          <button
             class="action-btn primary"
-            @click="aboutRoute.push({
-              query: {
-                id: 1,
-                name: 'bob'
-              }
-            })"
+            @click="
+              aboutRoute.push({
+                query: {
+                  id: 1,
+                  name: 'bob',
+                },
+              })
+            "
           >
             📋 Go to About
           </button>
@@ -95,7 +99,11 @@ function toUser() {
 .hero {
   text-align: center;
   padding: 4rem 0;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(147, 51, 234, 0.1) 100%
+  );
   border-radius: 16px;
   margin-bottom: 3rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -150,7 +158,7 @@ function toUser() {
 
 .code-block {
   color: #22d3ee;
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: 0.875rem;
   line-height: 1.5;
   white-space: pre-wrap;
@@ -260,15 +268,15 @@ function toUser() {
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .button-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }

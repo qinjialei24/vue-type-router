@@ -49,26 +49,26 @@
 </template>
 
 <script setup lang="ts">
-import { userProfileRoute, userRoute } from '../main'
-import { useRouter } from 'vue-router'
+import { userProfileRoute, userRoute } from "../main";
+import { useRouter } from "vue-router";
 
-const router = useRouter()
+const router = useRouter();
 
 const toUserProfile = () => {
   userProfileRoute.push({
     query: {
       id: 0,
-      name: 'bob'
+      name: "bob",
     },
     params: {
-      name: 'bob'
-    }
-  })
-}
+      name: "bob",
+    },
+  });
+};
 
 const toUserDetail = () => {
-  router.push({ path: '/user/bob/detail' })
-}
+  router.push({ path: "/user/bob/detail" });
+};
 </script>
 
 <style scoped>
@@ -81,7 +81,11 @@ const toUserDetail = () => {
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(147, 51, 234, 0.1) 100%
+  );
   border-radius: 16px;
   margin-bottom: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -174,7 +178,7 @@ const toUserDetail = () => {
 
 .param-value {
   color: #22d3ee;
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   background: rgba(34, 211, 238, 0.1);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
@@ -256,15 +260,15 @@ const toUserDetail = () => {
     text-align: center;
     gap: 1rem;
   }
-  
+
   .user-content {
     grid-template-columns: 1fr;
   }
-  
+
   .user-name {
     font-size: 1.5rem;
   }
-  
+
   .avatar-icon {
     width: 60px;
     height: 60px;

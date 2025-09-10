@@ -4,7 +4,7 @@
       <div class="detail-icon">📊</div>
       <h2 class="detail-title">User Detail</h2>
     </div>
-    
+
     <div class="detail-content">
       <div class="stats-grid">
         <div class="stat-card">
@@ -14,7 +14,7 @@
             <div class="stat-label">Total Orders</div>
           </div>
         </div>
-        
+
         <div class="stat-card">
           <div class="stat-icon">⭐</div>
           <div class="stat-info">
@@ -22,7 +22,7 @@
             <div class="stat-label">Rating</div>
           </div>
         </div>
-        
+
         <div class="stat-card">
           <div class="stat-icon">📅</div>
           <div class="stat-info">
@@ -30,7 +30,7 @@
             <div class="stat-label">Years Active</div>
           </div>
         </div>
-        
+
         <div class="stat-card">
           <div class="stat-icon">🏆</div>
           <div class="stat-info">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="activity-section">
         <h3 class="section-title">📊 Recent Activity</h3>
         <div class="activity-list">
@@ -66,13 +66,17 @@
           </div>
         </div>
       </div>
-      
+
       <div class="info-section">
         <div class="info-card">
           <div class="info-icon">📊</div>
           <div class="info-content">
             <h4>Detailed Analytics</h4>
-            <p>This detail page shows how nested routes work within the typesafe router system. The route structure maintains type safety at every level.</p>
+            <p>
+              This detail page shows how nested routes work within the typesafe
+              router system. The route structure maintains type safety at every
+              level.
+            </p>
           </div>
         </div>
       </div>
@@ -263,15 +267,15 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .detail-title {
     font-size: 1.25rem;
   }
-  
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .stat-card {
     flex-direction: column;
     text-align: center;

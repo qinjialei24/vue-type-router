@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
@@ -41,7 +41,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 body {
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #0a0a0a;
   color: #ffffff;
   line-height: 1.6;
@@ -136,12 +136,12 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .nav {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .nav-link {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;

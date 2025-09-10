@@ -10,7 +10,9 @@
         <h2 class="section-title">📊 Query Data</h2>
         <div class="query-container">
           <div class="query-label">Current Query Parameters:</div>
-          <pre class="query-data">{{ JSON.stringify(aboutRoute.getQuery(), null, 2) }}</pre>
+          <pre class="query-data">{{
+            JSON.stringify(aboutRoute.getQuery(), null, 2)
+          }}</pre>
         </div>
       </div>
 
@@ -31,22 +33,35 @@
           <div class="description-card">
             <div class="card-icon">🔍</div>
             <h3>Type Safety</h3>
-            <p>Get compile-time type checking for route parameters and query strings. No more runtime errors from typos or incorrect parameter types.</p>
+            <p>
+              Get compile-time type checking for route parameters and query
+              strings. No more runtime errors from typos or incorrect parameter
+              types.
+            </p>
           </div>
           <div class="description-card">
             <div class="card-icon">📦</div>
             <h3>Zero Runtime Cost</h3>
-            <p>Pure TypeScript implementation with no runtime overhead. The library adds zero bytes to your production bundle.</p>
+            <p>
+              Pure TypeScript implementation with no runtime overhead. The
+              library adds zero bytes to your production bundle.
+            </p>
           </div>
           <div class="description-card">
             <div class="card-icon">🧩</div>
             <h3>Vue 3 Native</h3>
-            <p>Built specifically for Vue 3 and Vue Router 4, leveraging the latest features and best practices.</p>
+            <p>
+              Built specifically for Vue 3 and Vue Router 4, leveraging the
+              latest features and best practices.
+            </p>
           </div>
           <div class="description-card">
             <div class="card-icon">🔧</div>
             <h3>Easy Integration</h3>
-            <p>Drop-in replacement for vue-router navigation methods with enhanced type safety and IntelliSense support.</p>
+            <p>
+              Drop-in replacement for vue-router navigation methods with
+              enhanced type safety and IntelliSense support.
+            </p>
           </div>
         </div>
       </div>
@@ -55,12 +70,12 @@
 </template>
 
 <script setup lang="ts">
-import {aboutRoute, homeRoute} from "../main";
+import { aboutRoute, homeRoute } from "../main";
 
 function toHome() {
   homeRoute.push({
-    query: {id: 0, name: "jack"},
-  })
+    query: { id: 0, name: "jack" },
+  });
 }
 </script>
 
@@ -143,7 +158,7 @@ function toHome() {
 
 .query-data {
   color: #22d3ee;
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: 0.875rem;
   line-height: 1.5;
   white-space: pre-wrap;
@@ -235,19 +250,17 @@ function toHome() {
   .content-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .page-title {
     font-size: 2rem;
   }
-  
+
   .description-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .nav-button {
     padding: 1.25rem;
   }
 }
 </style>
-
-

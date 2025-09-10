@@ -14,7 +14,9 @@
               <span class="code-title">Creating a typesafe route</span>
               <span class="code-lang">TypeScript</span>
             </div>
-            <pre class="code-content"><code>import { create } from 'vue-typesafe-router'
+            <pre
+              class="code-content"
+            ><code>import { create } from 'vue-typesafe-router'
 
 export const userRoute = create({
   path: '/user/:id',
@@ -46,17 +48,26 @@ const query = userRoute.getQuery()   // { tab?: string }</code></pre>
           <div class="demo-card">
             <div class="demo-icon">🚀</div>
             <h3>Try the Navigation</h3>
-            <p>Click on the navigation links in the header to see type-safe routing in action.</p>
+            <p>
+              Click on the navigation links in the header to see type-safe
+              routing in action.
+            </p>
           </div>
           <div class="demo-card">
             <div class="demo-icon">🔍</div>
             <h3>Inspect Types</h3>
-            <p>Open your browser's dev tools and check the TypeScript intellisense in your IDE.</p>
+            <p>
+              Open your browser's dev tools and check the TypeScript
+              intellisense in your IDE.
+            </p>
           </div>
           <div class="demo-card">
             <div class="demo-icon">⚙️</div>
             <h3>Modify Parameters</h3>
-            <p>Try changing the route parameters and see how TypeScript catches type errors.</p>
+            <p>
+              Try changing the route parameters and see how TypeScript catches
+              type errors.
+            </p>
           </div>
         </div>
       </div>
@@ -189,7 +200,7 @@ const query = userRoute.getQuery()   // { tab?: string }</code></pre>
 .code-content {
   padding: 1.5rem;
   color: #e5e7eb;
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: 0.875rem;
   line-height: 1.6;
   margin: 0;
@@ -280,15 +291,15 @@ const query = userRoute.getQuery()   // { tab?: string }</code></pre>
   .demo-title {
     font-size: 2rem;
   }
-  
+
   .interactive-demo {
     grid-template-columns: 1fr;
   }
-  
+
   .benefits-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .code-header {
     flex-direction: column;
     align-items: flex-start;
